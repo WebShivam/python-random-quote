@@ -1,15 +1,15 @@
+#file = open(quotes.txt, encoding="utf8")
 import random
 def primary():
    #print("Keep it logically awesome.")
 
-  f = open("quotes.txt")
+  f = open("quotes.txt", encoding="utf8")
   quotes = f.readlines()
   f.close()
 
-  last = 13
+  last = 19
   rnd = random.randint(0, last)
-  last = len(quotes) - 1
-  print(quotes[rnd])
+  print(quotes[last])
 
 if __name__== "__main__":
   primary()
